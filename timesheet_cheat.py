@@ -11,7 +11,7 @@ class TimesheetFiller:
         self.password = password
         self.url = "https://inov8consulting.timesheetportal.com/"
         self.element_dict = ElementDictionary().element_dict
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome("C:\\Users\\Matthew Moore\\Downloads\\chromedriver_win32\\chromedriver.exe")
 
     def fill_in_timesheet(self):
         self.driver.get(self.url)
@@ -28,8 +28,8 @@ class TimesheetFiller:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('username', required=True, help="Username for timesheets login")
-    parser.add_argument('password', required=True, help="Password for timesheets login")
+    parser.add_argument('username', help="Username for timesheets login")
+    parser.add_argument('password', help="Password for timesheets login")
     args = parser.parse_args()
     timesheet_filler = TimesheetFiller(args.username, args.password)
     timesheet_filler.fill_in_timesheet()
