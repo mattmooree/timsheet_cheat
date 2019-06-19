@@ -11,7 +11,7 @@ class TimesheetFiller:
         self.password = password
         self.url = "https://inov8consulting.timesheetportal.com/"
         self.element_dict = ElementDictionary().element_dict
-        self.driver = webdriver.Chrome("C:\\Users\\Matthew Moore\\Downloads\\chromedriver_win32\\chromedriver.exe")
+        self.driver = webdriver.Chrome()
 
     def fill_in_timesheet(self):
         self.driver.get(self.url)
