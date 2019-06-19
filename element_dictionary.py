@@ -6,5 +6,5 @@ class ElementDictionary:
             "wednesday_drop": """//*[@id="ctlEnd_1_2_0"]""",
             "thursday_drop": """//*[@id="ctlEnd_1_3_0"]""",
             "friday_drop": """//*[@id="ctlEnd_1_4_0"]""",
-            "save_draft_btn": """"//*[@id="MainContent_uc_0_tblSubmit_1_pnlFooterButtons_btnSaveTaskCode_CC_-1"]"""
+            "save_draft_btn": """//*[@id="MainContent_uc_0_tblSubmit_1_pnlFooterButtons_btnSaveTaskCode_CC_-1"]"""
         }
