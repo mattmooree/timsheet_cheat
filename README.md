@@ -15,7 +15,7 @@ python timesheet_cheat.py "<username>" "<password>"
 * Currently only updates the current week, could iterate through incomplete weeks and update
 
 ## Tips
-If you seecthe following error: 
+If you see the following error: 
 ```
 selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 ```
