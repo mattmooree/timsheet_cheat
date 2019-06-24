@@ -13,3 +13,13 @@ python timesheet_cheat.py "<username>" "<password>"
 * Allow the script to submit the timesheet instead of save as draft (maybe a prompt?)
 * Only update days that are not already completed
 * Currently only updates the current week, could iterate through incomplete weeks and update
+
+## Tips
+If you seecthe following error: 
+```
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+```
+Make sure chrome webdriver is on the system path. If that doesn't work, modify the python script and give the driver element the path of the chrome webdriver:
+```
+self.driver = webdriver.Chrome('/path/to/chromewebdriver')
+```
